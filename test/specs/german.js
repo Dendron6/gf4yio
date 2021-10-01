@@ -11,83 +11,78 @@ describe('German Game Flash For You Test Suite', function () {
 
     it('Server response 200 OK', async () => {
         let expectedValue = await action.landPage(baseurl);
-        await expect(expectedValue).toEqual(200, 'Response status has to be 200');
+        await expect(expectedValue).toEqual(200);
     })
 
     it('Response Time of Server is below 3100', async () => {
         let actualResult = await action.timer(baseurl);
-        await expect(actualResult).toBeLessThanOrEqual( 3500)
+        await expect(actualResult).toBeLessThanOrEqual( 3500);
     })
 
     //test of Ukrainian language link
 
     it(`Linkage test, switch to ${action.langUkr} page`, async () => {
-        await action.findCurrentUrl(action.flag2);
-        global.expectedUrlA = await browser.getUrl()
-        expect(expectedUrlA).toHaveValue('https://ua.gf4y.com', `This is URL of ${action.langUkr} page`)
-
-
+        await action.clickOnFlag(action.flag2);
+        let actualUrl = await browser.getUrl();
+        await expect(browser).toHaveUrl("https://ua.gf4y.com/");
     })
-    it.only(`Switching to ${action.langUkr} language`, async () => {
-        let expectedLanguage = await action.getLangConformation(await browser.getUrl())
-        await expect(expectedLanguage).toHaveValue('uk-ua', `Language is ${action.langUkr}`)
-        console.log("await expectedLanguage")
+    it(`Switching to ${action.langUkr} language finding language in HTML`, async () => {
+        let expectedLanguage = await action.getLangConformation(await browser.getUrl());
+        await expect(expectedLanguage).toEqual('uk-ua');
+
     })
 
     it('Title of the page says ', async () => {
-        expect(await driver.getTitle()).toHaveValue('Ігри онлайн. Грати безкоштовно в флеш ігри на GF4Y');
+        await expect(browser).toHaveTitle('Ігри онлайн. Грати безкоштовно в флеш ігри на GF4Y');
 
     })
-    it.skip(`Return to ${action.langGer} page`, async () => {
-        let engUrl = await action.findCurrentUrl(action.flag2);
-        expect(engUrl).toHaveValue('https://de.gf4y.com/', `This is URL of ${action.langGer} page`);
+    it(`Return to ${action.langGer} page`, async () => {
+        await action.clickOnFlag(action.flag2);
+        await expect(browser).toHaveUrl('https://de.gf4y.com/');
     })
-
 
     //Test of English version link
 
-    it.skip(`Linkage test, switch to ${action.langEng} page`, async () => {
-        global.expectedUrlB = await action.findCurrentUrl(action.flag3);
-        expect(expectedUrlB).toHaveValue('https://en.gf4y.com/', `This is URL of ${action.langEng} page`)
+    it(`Linkage test, switch to ${action.langEng} page`, async () => {
+        await action.clickOnFlag(action.flag3);
+        await expect(browser).toHaveUrl('https://en.gf4y.com/');
+    })
+    it(`Test of page switching to ${action.langEng} language`, async () => {
+        let expectedLanguage = await action.getLangConformation(await browser.getUrl());
+        await expect(expectedLanguage).toEqual('en-gb')
 
     })
-    it.skip(`Test of page switching to ${action.langEng} language`, async () => {
-        let expectedLanguage = await action.getLangConformation(expectedUrlB)
-        await expect(expectedLanguage).to.be.equal('en-gb', `Language is ${action.langEng}`)
+
+    it('Title of the page says ', async () => {
+        await expect(browser).toHaveTitle('Online Games - Play Free Online Games on GF4Y.COM');
 
     })
-
-    it.skip('Title of the page says ', async () => {
-        expect(await driver.getTitle()).toHaveValue('Online Games - Play Free Online Games on GF4Y.COM');
-
-    })
-    it.skip(`Return to ${action.langGer} page`, async () => {
-        let engUrl = await action.findCurrentUrl(action.flag3);
-        expect(engUrl).toHaveValue('https://de.gf4y.com/', `This is URL of ${action.langGer} page`);
+    it(`Return to ${action.langGer} page`, async () => {
+        await action.clickOnFlag(action.flag3);
+        await expect(browser).toHaveUrl('https://de.gf4y.com/');
     })
 
     //test of Russian version link
 
-    it.skip(`Linkage test, switch to ${action.langRu} page`, async () => {
-        global.expectedUrlC = await action.findCurrentUrl(action.flag1);
-        expect(expectedUrlC).toHaveValue('https://gf4y.com/', `This is URL of ${action.langRu} page`)
+    it(`Linkage test, switch to ${action.langRu} page`, async () => {
+        await action.clickOnFlag(action.flag1);
+        await expect(browser).toHaveUrl('https://gf4y.com/')
 
     })
-    it.skip(`Switching to ${action.langGer} language`, async () => {
-        let expectedLanguage = await action.getLangConformation(expectedUrlC)
-        await expect(expectedLanguage).to.be.equal('ru-ru', `Language is ${action.langRu}`)
+    it(`Switching to ${action.langGer} language`, async () => {
+        let expectedLanguage = await action.getLangConformation(await browser.getUrl())
+        await expect(expectedLanguage).toEqual('ru-ru')
 
     })
 
-    it.skip('Title of the page says ', async () => {
+    it('Title of the page says ', async () => {
         // title of new window can be used for assertions
-        let title = await driver.getTitle();
-        expect(title).to.be.equal('Игры онлайн бесплатно | Мини игры на GAME FLASH');
+        await expect(browser).toHaveTitle('Игры онлайн бесплатно | Мини игры на GAME FLASH');
 
     })
-    it.skip(`Return to ${action.langGer} page`, async () => {
-        let engUrl = await action.findCurrentUrl(action.flag2);
-        expect(engUrl).to.be.equal('https://de.gf4y.com/', `This is URL of ${action.langGer} page`);
+    it(`Return to ${action.langGer} page`, async () => {
+        await action.clickOnFlag(action.flag2);
+        await expect(browser).toHaveUrl('https://de.gf4y.com/');
     })
 
 

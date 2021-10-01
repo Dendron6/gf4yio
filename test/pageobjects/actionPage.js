@@ -46,7 +46,7 @@ class ActionPage extends Page {
     }
 
 
-    async findCurrentUrl(xpath) {
+    async clickOnFlag(xpath) {
         await xpath.click()
 
     }
