@@ -1,0 +1,62 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1633073725013' stop='1633073743888'>
+    <name>German Game Flash For You Test Suite</name>
+    <title>German Game Flash For You Test Suite</title>
+    <test-cases>
+        <test-case start='1633073725013' status='failed' stop='1633073743887'>
+            <name>Switching to Ukrainian language</name>
+            <title>Switching to Ukrainian language</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.61'/>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.61'/>
+            </parameters>
+            <steps>
+                <step start='1633073725016' status='passed' stop='1633073729673'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='99a0e36c-8567-4c2b-9f2f-9967c2b4551f-attachment.json' type='application/json' size='35'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1633073729674' status='passed' stop='1633073729683'>
+                    <name>GET /session/:sessionId/url</name>
+                    <title>GET /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Response' source='7bead7d4-9eef-4ec3-8481-7d760405d9cb-attachment.json' type='application/json' size='22'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1633073743135' status='passed' stop='1633073743886'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='7c217f32-5c0a-4adf-867f-665413b2b80a-attachment.png' type='image/png' size='1815593'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Expect de-de to have property value
+                
+                Expected: "uk-ua"
+                Received: undefined</message>
+                <stack-trace>Error: Expect de-de to have property value
+                
+                Expected: "uk-ua"
+                Received: undefined
+                    at Context.&lt;anonymous> (/Users/denyskhomenko/WebstormProjects/gf4yio/test/specs/german.js:40:40)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

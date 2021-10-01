@@ -1,0 +1,54 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1633029308559' stop='1633029329015'>
+    <name>German Game Flash For You Test Suite</name>
+    <title>German Game Flash For You Test Suite</title>
+    <test-cases>
+        <test-case start='1633029308559' status='broken' stop='1633029329014'>
+            <name>Response Time of Server is below 3100</name>
+            <title>Response Time of Server is below 3100</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.61'/>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.61'/>
+            </parameters>
+            <steps>
+                <step start='1633029308560' status='passed' stop='1633029313713'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='e03624b1-5d28-4d19-9fcd-29a25f9d0dfd-attachment.json' type='application/json' size='35'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1633029328027' status='passed' stop='1633029329013'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='e8be78da-5049-4ad9-a6b0-7a2ce3bb9118-attachment.png' type='image/png' size='1785925'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Cannot use 'in' operator to search for 'selector' in 4306</message>
+                <stack-trace>TypeError: Cannot use 'in' operator to search for 'selector' in 4306
+                    at Object.getSelectors (/Users/denyskhomenko/WebstormProjects/gf4yio/node_modules/expect-webdriverio/lib/util/formatMessage.js:28:33)
+                    at Object.enhanceError (/Users/denyskhomenko/WebstormProjects/gf4yio/node_modules/expect-webdriverio/lib/util/formatMessage.js:43:63)
+                    at /Users/denyskhomenko/WebstormProjects/gf4yio/node_modules/expect-webdriverio/lib/matchers/element/toHaveElementProperty.js:40:31
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+                    at runNextTicks (node:internal/process/task_queues:65:3)
+                    at processTimers (node:internal/timers:497:9)
+                    at async Browser.wrapCommandFn (/Users/denyskhomenko/WebstormProjects/gf4yio/node_modules/@wdio/utils/build/shim.js:131:29)
+                    at async Context.&lt;anonymous> (/Users/denyskhomenko/WebstormProjects/gf4yio/test/specs/german.js:25:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

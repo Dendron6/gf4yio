@@ -1,0 +1,65 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1633073236164' stop='1633073241551'>
+    <name>German Game Flash For You Test Suite</name>
+    <title>German Game Flash For You Test Suite</title>
+    <test-cases>
+        <test-case start='1633073236165' status='broken' stop='1633073241550'>
+            <name>Switching to Ukrainian language</name>
+            <title>Switching to Ukrainian language</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.61'/>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.61'/>
+            </parameters>
+            <steps>
+                <step start='1633073236166' status='passed' stop='1633073240808'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='717a2909-3289-4165-ac6c-a346cbbbb1a1-attachment.json' type='application/json' size='35'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1633073240812' status='passed' stop='1633073241549'>
+                    <name>GET /session/:sessionId/url</name>
+                    <title>GET /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='d1fba247-60ba-4a1b-9460-43a059bd123f-attachment.png' type='image/png' size='1685961'/>
+                    </attachments>
+                    <steps>
+                        <step start='1633073240813' status='passed' stop='1633073240822'>
+                            <name>GET /session/:sessionId/screenshot</name>
+                            <title>GET /session/:sessionId/screenshot</title>
+                            <attachments>
+                                <attachment title='Response' source='26ca497b-4b9b-4e4c-a848-8b038c011e34-attachment.json' type='application/json' size='22'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>The "url" argument must be of type string. Received an instance of Promise</message>
+                <stack-trace>TypeError [ERR_INVALID_ARG_TYPE]: The "url" argument must be of type string. Received an instance of Promise
+                    at new NodeError (node:internal/errors:371:5)
+                    at validateString (node:internal/validators:119:11)
+                    at Url.parse (node:url:169:3)
+                    at Object.urlParse [as parse] (node:url:156:13)
+                    at dispatchHttpRequest (/Users/denyskhomenko/WebstormProjects/gf4yio/node_modules/axios/lib/adapters/http.js:118:22)
+                    at new Promise (&lt;anonymous>)
+                    at httpAdapter (/Users/denyskhomenko/WebstormProjects/gf4yio/node_modules/axios/lib/adapters/http.js:48:10)
+                    at dispatchRequest (/Users/denyskhomenko/WebstormProjects/gf4yio/node_modules/axios/lib/core/dispatchRequest.js:58:10)
+                    at Axios.request (/Users/denyskhomenko/WebstormProjects/gf4yio/node_modules/axios/lib/core/Axios.js:108:15)
+                    at Axios.&lt;computed> [as get] (/Users/denyskhomenko/WebstormProjects/gf4yio/node_modules/axios/lib/core/Axios.js:129:17)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

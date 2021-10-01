@@ -1,0 +1,77 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1633070570902' stop='1633070591841'>
+    <name>German Game Flash For You Test Suite</name>
+    <title>German Game Flash For You Test Suite</title>
+    <test-cases>
+        <test-case start='1633070570903' status='failed' stop='1633070591841'>
+            <name>Linkage test, switch to Ukrainian page</name>
+            <title>Linkage test, switch to Ukrainian page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.61'/>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.61'/>
+            </parameters>
+            <steps>
+                <step start='1633070570905' status='passed' stop='1633070575571'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='d1e08f9b-438d-48dd-8022-3e88ae5f8a05-attachment.json' type='application/json' size='35'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1633070575574' status='passed' stop='1633070575589'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='c0326eac-c55e-497e-ac75-75b6d2d708f4-attachment.json' type='application/json' size='76'/>
+                        <attachment title='Response' source='87858de8-af21-4869-9182-bbbad61d221c-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1633070575598' status='passed' stop='1633070580917'>
+                    <name>POST /session/:sessionId/element/b953f52d-cb4b-4bd6-be95-8e38df98b461/click</name>
+                    <title>POST /session/:sessionId/element/b953f52d-cb4b-4bd6-be95-8e38df98b461/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1633070580917' status='passed' stop='1633070580925'>
+                    <name>GET /session/:sessionId/url</name>
+                    <title>GET /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Response' source='e8094e20-b9ae-4e4e-931e-dc3da2ceaef1-attachment.json' type='application/json' size='22'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1633070590929' status='passed' stop='1633070591840'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='a9df7594-9347-49ad-a9bf-fdb875276697-attachment.png' type='image/png' size='1601396'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Expect https://ua.gf4y.com/ to have property value
+                
+                Expected: "https://ua.gf4y.com"
+                Received: undefined</message>
+                <stack-trace>Error: Expect https://ua.gf4y.com/ to have property value
+                
+                Expected: "https://ua.gf4y.com"
+                Received: undefined
+                    at Context.&lt;anonymous> (/Users/denyskhomenko/WebstormProjects/gf4yio/test/specs/german.js:32:36)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

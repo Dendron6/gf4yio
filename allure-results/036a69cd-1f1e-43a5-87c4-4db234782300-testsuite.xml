@@ -1,0 +1,68 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1633069826930' stop='1633069842124'>
+    <name>German Game Flash For You Test Suite</name>
+    <title>German Game Flash For You Test Suite</title>
+    <test-cases>
+        <test-case start='1633069826930' status='failed' stop='1633069842124'>
+            <name>Linkage test, switch to Ukrainian page</name>
+            <title>Linkage test, switch to Ukrainian page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.61'/>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.61'/>
+            </parameters>
+            <steps>
+                <step start='1633069826931' status='passed' stop='1633069831608'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='c0aea0a3-fca8-4865-8dd3-7a51b38b1a03-attachment.json' type='application/json' size='35'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1633069831612' status='passed' stop='1633069831634'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='42f64618-df46-4e66-affd-e72728deabc6-attachment.json' type='application/json' size='76'/>
+                        <attachment title='Response' source='666bef13-4369-4781-a869-3be0047b6d1c-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1633069831641' status='passed' stop='1633069837050'>
+                    <name>POST /session/:sessionId/element/853fb975-29f1-4fbd-8107-ca10990218bd/click</name>
+                    <title>POST /session/:sessionId/element/853fb975-29f1-4fbd-8107-ca10990218bd/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1633069841621' status='passed' stop='1633069842123'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='472499b7-d19d-47e0-9c14-fb0089e563fe-attachment.png' type='image/png' size='1142190'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Expect  to have property value
+                
+                Expected: "https://ua.gf4y.com"
+                Received: undefined</message>
+                <stack-trace>Error: Expect  to have property value
+                
+                Expected: "https://ua.gf4y.com"
+                Received: undefined
+                    at Context.&lt;anonymous> (/Users/denyskhomenko/WebstormProjects/gf4yio/test/specs/german.js:32:36)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,553 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1633071273840' stop='1633071338115'>
+    <name>German Game Flash For You Test Suite</name>
+    <title>German Game Flash For You Test Suite</title>
+    <test-cases>
+        <test-case start='1633071273840' status='passed' stop='1633071282328'>
+            <name>Server response 200 OK</name>
+            <title>Server response 200 OK</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.61'/>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.61'/>
+            </parameters>
+            <steps>
+                <step start='1633071273842' status='passed' stop='1633071278572'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='fc755b8e-2d3a-47e0-b1f6-fe1e746d7bab-attachment.json' type='application/json' size='35'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1633071282329' status='passed' stop='1633071285804'>
+            <name>Response Time of Server is below 3100</name>
+            <title>Response Time of Server is below 3100</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.61'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1633071285805' status='passed' stop='1633071291774'>
+            <name>Linkage test, switch to Ukrainian page</name>
+            <title>Linkage test, switch to Ukrainian page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.61'/>
+            </parameters>
+            <steps>
+                <step start='1633071285807' status='passed' stop='1633071285838'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='6478cee3-30ca-436f-9190-dfa26ff7de5d-attachment.json' type='application/json' size='76'/>
+                        <attachment title='Response' source='76565f56-be13-46a5-af22-55fc264329ce-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1633071285846' status='passed' stop='1633071291765'>
+                    <name>POST /session/:sessionId/element/2e351d60-88de-4426-b082-00681f386bb6/click</name>
+                    <title>POST /session/:sessionId/element/2e351d60-88de-4426-b082-00681f386bb6/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1633071291765' status='passed' stop='1633071291772'>
+                    <name>GET /session/:sessionId/url</name>
+                    <title>GET /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Response' source='3854e86b-e1c7-431c-84d9-a3bafa244190-attachment.json' type='application/json' size='22'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1633071291774' status='failed' stop='1633071305861'>
+            <name>Switching to Ukrainian language</name>
+            <title>Switching to Ukrainian language</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.61'/>
+            </parameters>
+            <steps>
+                <step start='1633071305226' status='passed' stop='1633071305859'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='b5ed0e4e-53ce-4957-8e22-0c1eb33fc01d-attachment.png' type='image/png' size='1399863'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Expect uk-ua to have property value
+                
+                Expected: "uk-ua"
+                Received: undefined</message>
+                <stack-trace>Error: Expect uk-ua to have property value
+                
+                Expected: "uk-ua"
+                Received: undefined
+                    at Context.&lt;anonymous> (/Users/denyskhomenko/WebstormProjects/gf4yio/test/specs/german.js:39:40)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1633071305861' status='broken' stop='1633071306488'>
+            <name>Title of the page says </name>
+            <title>Title of the page says </title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.61'/>
+            </parameters>
+            <steps>
+                <step start='1633071305861' status='passed' stop='1633071305868'>
+                    <name>GET /session/:sessionId/title</name>
+                    <title>GET /session/:sessionId/title</title>
+                    <attachments>
+                        <attachment title='Response' source='db0345e8-5128-496b-9bb3-240c7b612e2a-attachment.json' type='application/json' size='52'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1633071305869' status='passed' stop='1633071306486'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='38509fd0-340e-48a6-9dfe-67474522f38c-attachment.png' type='image/png' size='1399863'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Cannot read property 'be' of undefined</message>
+                <stack-trace>TypeError: Cannot read property 'be' of undefined
+                    at Context.&lt;anonymous> (/Users/denyskhomenko/WebstormProjects/gf4yio/test/specs/german.js:46:25)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1633071306491' status='broken' stop='1633071310471'>
+            <name>Return to German page</name>
+            <title>Return to German page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.61'/>
+            </parameters>
+            <steps>
+                <step start='1633071306497' status='passed' stop='1633071306508'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='aa15022a-c7c5-4e8f-87f1-0c9c2b83d125-attachment.json' type='application/json' size='76'/>
+                        <attachment title='Response' source='6de27049-4f91-4c24-9cad-361813557dc2-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1633071306512' status='passed' stop='1633071310072'>
+                    <name>POST /session/:sessionId/element/c4ec2c86-748c-4525-a2c9-350847f35612/click</name>
+                    <title>POST /session/:sessionId/element/c4ec2c86-748c-4525-a2c9-350847f35612/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1633071310072' status='passed' stop='1633071310471'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='a58b3006-0e7c-4d29-b2a6-76739d4f42ac-attachment.png' type='image/png' size='605628'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Cannot read property 'be' of undefined</message>
+                <stack-trace>TypeError: Cannot read property 'be' of undefined
+                    at Context.&lt;anonymous> (/Users/denyskhomenko/WebstormProjects/gf4yio/test/specs/german.js:51:26)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1633071310471' status='broken' stop='1633071311203'>
+            <name>Linkage test, switch to English page</name>
+            <title>Linkage test, switch to English page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.61'/>
+            </parameters>
+            <steps>
+                <step start='1633071310472' status='broken' stop='1633071311203'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1633071310473' status='passed' stop='1633071311203'>
+                            <name>POST /session/:sessionId/element</name>
+                            <title>POST /session/:sessionId/element</title>
+                            <attachments>
+                                <attachment title='Request' source='47a847f4-02f9-455e-98a5-6d9181be7962-attachment.json' type='application/json' size='76'/>
+                                <attachment title='Screenshot' source='0662d7e3-c9ab-44ec-bca8-0c5cc255959d-attachment.png' type='image/png' size='1782063'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1633071311206' status='undefined'>
+                    <name>POST /session/:sessionId/element/efbb862b-dabe-427f-9d21-975a0ef1a878/click</name>
+                    <title>POST /session/:sessionId/element/efbb862b-dabe-427f-9d21-975a0ef1a878/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Response' source='a5f1f1a1-bc90-49a2-ba21-b9318f788344-attachment.json' type='application/json' size='83'/>
+            </attachments>
+            <failure>
+                <message>xpath.click is not a function</message>
+                <stack-trace>TypeError: xpath.click is not a function
+                    at ActionPage.findCurrentUrl (/Users/denyskhomenko/WebstormProjects/gf4yio/test/pageobjects/actionPage.js:54:21)
+                    at Context.&lt;anonymous> (/Users/denyskhomenko/WebstormProjects/gf4yio/test/specs/german.js:58:44)
+                    at Context.executeAsync (/Users/denyskhomenko/WebstormProjects/gf4yio/node_modules/@wdio/utils/build/shim.js:323:27)
+                    at Context.testFrameworkFnWrapper (/Users/denyskhomenko/WebstormProjects/gf4yio/node_modules/@wdio/utils/build/test-framework/testFnWrapper.js:45:32)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1633071311208' status='failed' stop='1633071317415'>
+            <name>Test of page switching to English language</name>
+            <title>Test of page switching to English language</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.61'/>
+            </parameters>
+            <steps>
+                <step start='1633071311209' status='passed' stop='1633071316882'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Screenshot' source='0e5f6c37-a694-441f-8ce0-1802976eacc9-attachment.png' type='image/png' size='1259050'/>
+            </attachments>
+            <failure>
+                <message>expectedUrlB is not defined</message>
+                <stack-trace>ReferenceError: expectedUrlB is not defined
+                    at Context.&lt;anonymous> (/Users/denyskhomenko/WebstormProjects/gf4yio/test/specs/german.js:63:65)
+                    at Context.executeAsync (/Users/denyskhomenko/WebstormProjects/gf4yio/node_modules/@wdio/utils/build/shim.js:323:27)
+                    at Context.testFrameworkFnWrapper (/Users/denyskhomenko/WebstormProjects/gf4yio/node_modules/@wdio/utils/build/test-framework/testFnWrapper.js:45:32)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1633071317415' status='broken' stop='1633071317947'>
+            <name>Title of the page says </name>
+            <title>Title of the page says </title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.61'/>
+            </parameters>
+            <steps>
+                <step start='1633071317416' status='passed' stop='1633071317420'>
+                    <name>GET /session/:sessionId/title</name>
+                    <title>GET /session/:sessionId/title</title>
+                    <attachments>
+                        <attachment title='Response' source='db812c2a-8257-4a22-af8b-10ac429824de-attachment.json' type='application/json' size='51'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1633071317421' status='passed' stop='1633071317946'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='a8b6f3c2-2eb3-47ad-85b4-506750f2fc1b-attachment.png' type='image/png' size='1259050'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Cannot read property 'be' of undefined</message>
+                <stack-trace>TypeError: Cannot read property 'be' of undefined
+                    at Context.&lt;anonymous> (/Users/denyskhomenko/WebstormProjects/gf4yio/test/specs/german.js:71:25)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1633071317947' status='broken' stop='1633071318458'>
+            <name>Return to German page</name>
+            <title>Return to German page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.61'/>
+            </parameters>
+            <steps>
+                <step start='1633071317947' status='broken' stop='1633071318458'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1633071317948' status='passed' stop='1633071318458'>
+                            <name>POST /session/:sessionId/element</name>
+                            <title>POST /session/:sessionId/element</title>
+                            <attachments>
+                                <attachment title='Request' source='baa76fb3-3d31-418a-9be5-723935afda6e-attachment.json' type='application/json' size='76'/>
+                                <attachment title='Screenshot' source='1351d069-25fb-4a1b-9e5c-a6413b28dd2e-attachment.png' type='image/png' size='1259050'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1633071318463' status='undefined'>
+                    <name>POST /session/:sessionId/element/5e5284eb-c296-4397-b7d7-d1a3375acc58/click</name>
+                    <title>POST /session/:sessionId/element/5e5284eb-c296-4397-b7d7-d1a3375acc58/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Response' source='feeb8c9e-fb9e-4734-bd5d-61360825bd7a-attachment.json' type='application/json' size='83'/>
+            </attachments>
+            <failure>
+                <message>xpath.click is not a function</message>
+                <stack-trace>TypeError: xpath.click is not a function
+                    at ActionPage.findCurrentUrl (/Users/denyskhomenko/WebstormProjects/gf4yio/test/pageobjects/actionPage.js:54:21)
+                    at Context.&lt;anonymous> (/Users/denyskhomenko/WebstormProjects/gf4yio/test/specs/german.js:75:35)
+                    at Context.executeAsync (/Users/denyskhomenko/WebstormProjects/gf4yio/node_modules/@wdio/utils/build/shim.js:323:27)
+                    at Context.testFrameworkFnWrapper (/Users/denyskhomenko/WebstormProjects/gf4yio/node_modules/@wdio/utils/build/test-framework/testFnWrapper.js:45:32)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1633071318467' status='broken' stop='1633071322749'>
+            <name>Linkage test, switch to Russian page</name>
+            <title>Linkage test, switch to Russian page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.61'/>
+            </parameters>
+            <steps>
+                <step start='1633071318468' status='passed' stop='1633071322749'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='2e008da7-d97c-4c36-9617-b3d747fafcb2-attachment.png' type='image/png' size='1785925'/>
+                    </attachments>
+                    <steps>
+                        <step start='1633071318469' status='passed' stop='1633071321745'>
+                            <name>POST /session/:sessionId/element</name>
+                            <title>POST /session/:sessionId/element</title>
+                            <attachments>
+                                <attachment title='Request' source='c9919430-3991-4716-ab42-07394ee49d03-attachment.json' type='application/json' size='76'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1633071322755' status='undefined'>
+                    <name>POST /session/:sessionId/element/cae3bbe5-71e9-4944-953b-74a80e6b31f3/click</name>
+                    <title>POST /session/:sessionId/element/cae3bbe5-71e9-4944-953b-74a80e6b31f3/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Response' source='6e8ef827-00d8-47bd-919b-047494bdb72d-attachment.json' type='application/json' size='83'/>
+            </attachments>
+            <failure>
+                <message>xpath.click is not a function</message>
+                <stack-trace>TypeError: xpath.click is not a function
+                    at ActionPage.findCurrentUrl (/Users/denyskhomenko/WebstormProjects/gf4yio/test/pageobjects/actionPage.js:54:21)
+                    at Context.&lt;anonymous> (/Users/denyskhomenko/WebstormProjects/gf4yio/test/specs/german.js:82:44)
+                    at Context.executeAsync (/Users/denyskhomenko/WebstormProjects/gf4yio/node_modules/@wdio/utils/build/shim.js:323:27)
+                    at Context.testFrameworkFnWrapper (/Users/denyskhomenko/WebstormProjects/gf4yio/node_modules/@wdio/utils/build/test-framework/testFnWrapper.js:45:32)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1633071322757' status='failed' stop='1633071332981'>
+            <name>Switching to German language</name>
+            <title>Switching to German language</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.61'/>
+            </parameters>
+            <steps>
+                <step start='1633071322757' status='passed' stop='1633071332153'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Screenshot' source='c2cb69c1-5797-48f0-8c35-14ce9dc971be-attachment.png' type='image/png' size='1317095'/>
+            </attachments>
+            <failure>
+                <message>expectedUrlC is not defined</message>
+                <stack-trace>ReferenceError: expectedUrlC is not defined
+                    at Context.&lt;anonymous> (/Users/denyskhomenko/WebstormProjects/gf4yio/test/specs/german.js:87:65)
+                    at Context.executeAsync (/Users/denyskhomenko/WebstormProjects/gf4yio/node_modules/@wdio/utils/build/shim.js:323:27)
+                    at Context.testFrameworkFnWrapper (/Users/denyskhomenko/WebstormProjects/gf4yio/node_modules/@wdio/utils/build/test-framework/testFnWrapper.js:45:32)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1633071332981' status='broken' stop='1633071333510'>
+            <name>Title of the page says </name>
+            <title>Title of the page says </title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.61'/>
+            </parameters>
+            <steps>
+                <step start='1633071332982' status='passed' stop='1633071332992'>
+                    <name>GET /session/:sessionId/title</name>
+                    <title>GET /session/:sessionId/title</title>
+                    <attachments>
+                        <attachment title='Response' source='4b55d34e-0553-4688-904e-e8e0a389ecce-attachment.json' type='application/json' size='49'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1633071332993' status='passed' stop='1633071333510'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='1180fe71-ea9a-4ffe-bf6d-093431960328-attachment.png' type='image/png' size='1317095'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Cannot read property 'be' of undefined</message>
+                <stack-trace>TypeError: Cannot read property 'be' of undefined
+                    at Context.&lt;anonymous> (/Users/denyskhomenko/WebstormProjects/gf4yio/test/specs/german.js:95:25)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1633071333512' status='broken' stop='1633071337410'>
+            <name>Return to German page</name>
+            <title>Return to German page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.61'/>
+            </parameters>
+            <steps>
+                <step start='1633071333514' status='passed' stop='1633071333534'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='253da952-008a-4742-8650-ef86a070a10d-attachment.json' type='application/json' size='76'/>
+                        <attachment title='Response' source='c61f276d-7c95-48bc-8a3b-857426d72558-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1633071333539' status='passed' stop='1633071336388'>
+                    <name>POST /session/:sessionId/element/263ac5ce-006b-40fe-acfc-25c902c44c74/click</name>
+                    <title>POST /session/:sessionId/element/263ac5ce-006b-40fe-acfc-25c902c44c74/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1633071336389' status='passed' stop='1633071337410'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='7f6d4695-4f09-4332-ae48-bb8a77698287-attachment.png' type='image/png' size='1785925'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Cannot read property 'be' of undefined</message>
+                <stack-trace>TypeError: Cannot read property 'be' of undefined
+                    at Context.&lt;anonymous> (/Users/denyskhomenko/WebstormProjects/gf4yio/test/specs/german.js:100:26)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1633071337410' status='broken' stop='1633071338111'>
+            <name>Top 100 games displays more than 100 results</name>
+            <title>Top 100 games displays more than 100 results</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.61'/>
+            </parameters>
+            <steps>
+                <step start='1633071337411' status='passed' stop='1633071338110'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='10365d58-4450-4cdd-a450-d3bf48707673-attachment.png' type='image/png' size='1697073'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>By is not defined</message>
+                <stack-trace>ReferenceError: By is not defined
+                    at ActionPage.findByXpath (/Users/denyskhomenko/WebstormProjects/gf4yio/test/pageobjects/actionPage.js:32:34)
+                    at Context.&lt;anonymous> (/Users/denyskhomenko/WebstormProjects/gf4yio/test/specs/german.js:105:22)
+                    at Context.executeAsync (/Users/denyskhomenko/WebstormProjects/gf4yio/node_modules/@wdio/utils/build/shim.js:323:27)
+                    at Context.testFrameworkFnWrapper (/Users/denyskhomenko/WebstormProjects/gf4yio/node_modules/@wdio/utils/build/test-framework/testFnWrapper.js:45:32)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

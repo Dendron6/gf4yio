@@ -1,0 +1,253 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1633071909736' stop='1633071941364'>
+    <name>German Game Flash For You Test Suite</name>
+    <title>German Game Flash For You Test Suite</title>
+    <test-cases>
+        <test-case start='1633071909737' status='passed' stop='1633071918149'>
+            <name>Server response 200 OK</name>
+            <title>Server response 200 OK</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.61'/>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.61'/>
+            </parameters>
+            <steps>
+                <step start='1633071909738' status='passed' stop='1633071914548'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='8ef800d9-f038-4484-a8eb-e4bcf60b1428-attachment.json' type='application/json' size='35'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1633071918150' status='passed' stop='1633071921640'>
+            <name>Response Time of Server is below 3100</name>
+            <title>Response Time of Server is below 3100</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.61'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1633071921641' status='passed' stop='1633071927239'>
+            <name>Linkage test, switch to Ukrainian page</name>
+            <title>Linkage test, switch to Ukrainian page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.61'/>
+            </parameters>
+            <steps>
+                <step start='1633071921644' status='passed' stop='1633071921666'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='ffd104c3-9385-4ded-aa66-cf57d14bc2f8-attachment.json' type='application/json' size='76'/>
+                        <attachment title='Response' source='3dd9e818-c941-4a84-be80-53932e4ca85f-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1633071921672' status='passed' stop='1633071927230'>
+                    <name>POST /session/:sessionId/element/bd655120-d0cf-4058-bef7-18c5a2b5c78c/click</name>
+                    <title>POST /session/:sessionId/element/bd655120-d0cf-4058-bef7-18c5a2b5c78c/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1633071927230' status='passed' stop='1633071927237'>
+                    <name>GET /session/:sessionId/url</name>
+                    <title>GET /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Response' source='dd56e8ee-f037-4dd4-a67c-5ba0cbabc8e9-attachment.json' type='application/json' size='22'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1633071927239' status='failed' stop='1633071941363'>
+            <name>Switching to Ukrainian language</name>
+            <title>Switching to Ukrainian language</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.61'/>
+            </parameters>
+            <steps>
+                <step start='1633071940507' status='passed' stop='1633071941362'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='b91393cf-346d-4326-a807-3c6eb8faf9d3-attachment.png' type='image/png' size='1399863'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Expect uk-ua to have property value
+                
+                Expected: "uk-ua"
+                Received: undefined</message>
+                <stack-trace>Error: Expect uk-ua to have property value
+                
+                Expected: "uk-ua"
+                Received: undefined
+                    at Context.&lt;anonymous> (/Users/denyskhomenko/WebstormProjects/gf4yio/test/specs/german.js:39:40)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1633071941363' status='pending' stop='1633071941363'>
+            <name>Title of the page says </name>
+            <title>Title of the page says </title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Test ignored</message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1633071941363' status='pending' stop='1633071941363'>
+            <name>Return to German page</name>
+            <title>Return to German page</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Test ignored</message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1633071941363' status='pending' stop='1633071941363'>
+            <name>Linkage test, switch to English page</name>
+            <title>Linkage test, switch to English page</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Test ignored</message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1633071941363' status='pending' stop='1633071941363'>
+            <name>Test of page switching to English language</name>
+            <title>Test of page switching to English language</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Test ignored</message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1633071941363' status='pending' stop='1633071941363'>
+            <name>Title of the page says </name>
+            <title>Title of the page says </title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Test ignored</message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1633071941363' status='pending' stop='1633071941363'>
+            <name>Return to German page</name>
+            <title>Return to German page</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Test ignored</message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1633071941363' status='pending' stop='1633071941363'>
+            <name>Linkage test, switch to Russian page</name>
+            <title>Linkage test, switch to Russian page</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Test ignored</message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1633071941363' status='pending' stop='1633071941363'>
+            <name>Switching to German language</name>
+            <title>Switching to German language</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Test ignored</message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1633071941363' status='pending' stop='1633071941363'>
+            <name>Title of the page says </name>
+            <title>Title of the page says </title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Test ignored</message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1633071941364' status='pending' stop='1633071941364'>
+            <name>Return to German page</name>
+            <title>Return to German page</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Test ignored</message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1633071941364' status='pending' stop='1633071941364'>
+            <name>Top 100 games displays more than 100 results</name>
+            <title>Top 100 games displays more than 100 results</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Test ignored</message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

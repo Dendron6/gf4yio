@@ -1,0 +1,42 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1633028282431' stop='1633028282436'>
+    <name>German Game Flash For You Test Suite</name>
+    <title>German Game Flash For You Test Suite</title>
+    <test-cases>
+        <test-case start='1633028282432' status='broken' stop='1633028282435'>
+            <name>"before all" hook for German Game Flash For You Test Suite</name>
+            <title>"before all" hook for German Game Flash For You Test Suite</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.61'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Parameter for "url" command needs to be type of string</message>
+                <stack-trace>Error: Parameter for "url" command needs to be type of string
+                    at Browser.url (/Users/denyskhomenko/WebstormProjects/gf4yio/node_modules/webdriverio/build/commands/browser/url.js:42:15)
+                    at Browser.wrapCommandFn (/Users/denyskhomenko/WebstormProjects/gf4yio/node_modules/@wdio/utils/build/shim.js:131:38)
+                    at async Context.&lt;anonymous> (/Users/denyskhomenko/WebstormProjects/gf4yio/test/specs/german.js:11:9)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1633028282435' status='passed' stop='1633028282435'>
+            <name>Top 100 games displays more than 100 results</name>
+            <title>Top 100 games displays more than 100 results</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.61'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

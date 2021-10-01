@@ -1,0 +1,507 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1633028349978' stop='1633028370471'>
+    <name>German Game Flash For You Test Suite</name>
+    <title>German Game Flash For You Test Suite</title>
+    <test-cases>
+        <test-case start='1633028349979' status='broken' stop='1633028360017'>
+            <name>Server response 200 OK</name>
+            <title>Server response 200 OK</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.61'/>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.61'/>
+            </parameters>
+            <steps>
+                <step start='1633028349980' status='passed' stop='1633028355201'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='8ae43916-a448-41da-b813-b63577f7e36f-attachment.json' type='application/json' size='35'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1633028359068' status='passed' stop='1633028360016'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='904070ef-81dc-4d58-bfd1-3a61d4161fc3-attachment.png' type='image/png' size='1697073'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Cannot read property 'be' of undefined</message>
+                <stack-trace>TypeError: Cannot read property 'be' of undefined
+                    at Context.&lt;anonymous> (/Users/denyskhomenko/WebstormProjects/gf4yio/test/specs/german.js:20:39)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1633028360018' status='broken' stop='1633028364381'>
+            <name>Response Time of Server is below 3100</name>
+            <title>Response Time of Server is below 3100</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.61'/>
+            </parameters>
+            <steps>
+                <step start='1633028363487' status='passed' stop='1633028364381'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='3d4bae8e-6f93-4404-bab3-3fa50e2f7cf8-attachment.png' type='image/png' size='1697073'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Cannot read property 'be' of undefined</message>
+                <stack-trace>TypeError: Cannot read property 'be' of undefined
+                    at Context.&lt;anonymous> (/Users/denyskhomenko/WebstormProjects/gf4yio/test/specs/german.js:26:38)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1633028364382' status='broken' stop='1633028365108'>
+            <name>Linkage test, switch to Ukrainian page</name>
+            <title>Linkage test, switch to Ukrainian page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.61'/>
+            </parameters>
+            <steps>
+                <step start='1633028364382' status='passed' stop='1633028365107'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='39b4d5e5-9eff-41f3-966b-032001b28733-attachment.png' type='image/png' size='1753602'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>By is not defined</message>
+                <stack-trace>ReferenceError: By is not defined
+                    at ActionPage.findCurrentUrl (/Users/denyskhomenko/WebstormProjects/gf4yio/test/pageobjects/actionPage.js:36:34)
+                    at Context.&lt;anonymous> (/Users/denyskhomenko/WebstormProjects/gf4yio/test/specs/german.js:32:44)
+                    at Context.executeAsync (/Users/denyskhomenko/WebstormProjects/gf4yio/node_modules/@wdio/utils/build/shim.js:323:27)
+                    at Context.testFrameworkFnWrapper (/Users/denyskhomenko/WebstormProjects/gf4yio/node_modules/@wdio/utils/build/test-framework/testFnWrapper.js:45:32)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1633028365109' status='failed' stop='1633028365839'>
+            <name>Switching to Ukrainian language</name>
+            <title>Switching to Ukrainian language</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.61'/>
+            </parameters>
+            <steps>
+                <step start='1633028365111' status='passed' stop='1633028365839'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='cf19b225-b352-4b48-998f-22638dd844be-attachment.png' type='image/png' size='1820768'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>expectedUrlA is not defined</message>
+                <stack-trace>ReferenceError: expectedUrlA is not defined
+                    at Context.&lt;anonymous> (/Users/denyskhomenko/WebstormProjects/gf4yio/test/specs/german.js:37:65)
+                    at Context.executeAsync (/Users/denyskhomenko/WebstormProjects/gf4yio/node_modules/@wdio/utils/build/shim.js:323:27)
+                    at Context.testFrameworkFnWrapper (/Users/denyskhomenko/WebstormProjects/gf4yio/node_modules/@wdio/utils/build/test-framework/testFnWrapper.js:45:32)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1633028365840' status='broken' stop='1633028366579'>
+            <name>Title of the page says </name>
+            <title>Title of the page says </title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.61'/>
+            </parameters>
+            <steps>
+                <step start='1633028365840' status='passed' stop='1633028365849'>
+                    <name>GET /session/:sessionId/title</name>
+                    <title>GET /session/:sessionId/title</title>
+                    <attachments>
+                        <attachment title='Response' source='94c9759b-97f6-4f37-8fde-9374dfe05074-attachment.json' type='application/json' size='55'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1633028365849' status='passed' stop='1633028366579'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='5a70a492-7dba-4930-88e9-359e55794b07-attachment.png' type='image/png' size='1801391'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Cannot read property 'be' of undefined</message>
+                <stack-trace>TypeError: Cannot read property 'be' of undefined
+                    at Context.&lt;anonymous> (/Users/denyskhomenko/WebstormProjects/gf4yio/test/specs/german.js:45:25)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1633028366579' status='broken' stop='1633028367304'>
+            <name>Return to German page</name>
+            <title>Return to German page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.61'/>
+            </parameters>
+            <steps>
+                <step start='1633028366580' status='passed' stop='1633028367304'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='61e41a24-3ab3-4e6a-9226-02bcec94e584-attachment.png' type='image/png' size='1785925'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>By is not defined</message>
+                <stack-trace>ReferenceError: By is not defined
+                    at ActionPage.findCurrentUrl (/Users/denyskhomenko/WebstormProjects/gf4yio/test/pageobjects/actionPage.js:36:34)
+                    at Context.&lt;anonymous> (/Users/denyskhomenko/WebstormProjects/gf4yio/test/specs/german.js:49:35)
+                    at Context.executeAsync (/Users/denyskhomenko/WebstormProjects/gf4yio/node_modules/@wdio/utils/build/shim.js:323:27)
+                    at Context.testFrameworkFnWrapper (/Users/denyskhomenko/WebstormProjects/gf4yio/node_modules/@wdio/utils/build/test-framework/testFnWrapper.js:45:32)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1633028367305' status='broken' stop='1633028368032'>
+            <name>Linkage test, switch to English page</name>
+            <title>Linkage test, switch to English page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.61'/>
+            </parameters>
+            <steps>
+                <step start='1633028367305' status='passed' stop='1633028368032'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='e4b338b7-25f6-4b1d-bb52-e817c7280a70-attachment.png' type='image/png' size='1785925'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>By is not defined</message>
+                <stack-trace>ReferenceError: By is not defined
+                    at ActionPage.findCurrentUrl (/Users/denyskhomenko/WebstormProjects/gf4yio/test/pageobjects/actionPage.js:36:34)
+                    at Context.&lt;anonymous> (/Users/denyskhomenko/WebstormProjects/gf4yio/test/specs/german.js:57:44)
+                    at Context.executeAsync (/Users/denyskhomenko/WebstormProjects/gf4yio/node_modules/@wdio/utils/build/shim.js:323:27)
+                    at Context.testFrameworkFnWrapper (/Users/denyskhomenko/WebstormProjects/gf4yio/node_modules/@wdio/utils/build/test-framework/testFnWrapper.js:45:32)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1633028368032' status='failed' stop='1633028368797'>
+            <name>Test of page switching to English language</name>
+            <title>Test of page switching to English language</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.61'/>
+            </parameters>
+            <steps>
+                <step start='1633028368033' status='passed' stop='1633028368797'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='92f7a4e8-684a-48b9-9422-a2315f5d3810-attachment.png' type='image/png' size='1790005'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>expectedUrlB is not defined</message>
+                <stack-trace>ReferenceError: expectedUrlB is not defined
+                    at Context.&lt;anonymous> (/Users/denyskhomenko/WebstormProjects/gf4yio/test/specs/german.js:62:65)
+                    at Context.executeAsync (/Users/denyskhomenko/WebstormProjects/gf4yio/node_modules/@wdio/utils/build/shim.js:323:27)
+                    at Context.testFrameworkFnWrapper (/Users/denyskhomenko/WebstormProjects/gf4yio/node_modules/@wdio/utils/build/test-framework/testFnWrapper.js:45:32)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1633028368797' status='broken' stop='1633028369537'>
+            <name>Title of the page says </name>
+            <title>Title of the page says </title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.61'/>
+            </parameters>
+            <steps>
+                <step start='1633028368797' status='passed' stop='1633028368804'>
+                    <name>GET /session/:sessionId/title</name>
+                    <title>GET /session/:sessionId/title</title>
+                    <attachments>
+                        <attachment title='Response' source='1120de0f-5baf-4fa4-b70e-3df10cb1d5e9-attachment.json' type='application/json' size='55'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1633028368805' status='passed' stop='1633028369537'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='85d3eb5a-b7e1-4e31-b380-7379616089f5-attachment.png' type='image/png' size='1787183'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Cannot read property 'be' of undefined</message>
+                <stack-trace>TypeError: Cannot read property 'be' of undefined
+                    at Context.&lt;anonymous> (/Users/denyskhomenko/WebstormProjects/gf4yio/test/specs/german.js:70:25)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1633028369537' status='broken' stop='1633028370337'>
+            <name>Return to German page</name>
+            <title>Return to German page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.61'/>
+            </parameters>
+            <steps>
+                <step start='1633028369538' status='passed' stop='1633028370334'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='3adaf443-98ca-4185-9874-9a6bcf997038-attachment.png' type='image/png' size='1785925'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>By is not defined</message>
+                <stack-trace>ReferenceError: By is not defined
+                    at ActionPage.findCurrentUrl (/Users/denyskhomenko/WebstormProjects/gf4yio/test/pageobjects/actionPage.js:36:34)
+                    at Context.&lt;anonymous> (/Users/denyskhomenko/WebstormProjects/gf4yio/test/specs/german.js:74:35)
+                    at Context.executeAsync (/Users/denyskhomenko/WebstormProjects/gf4yio/node_modules/@wdio/utils/build/shim.js:323:27)
+                    at Context.testFrameworkFnWrapper (/Users/denyskhomenko/WebstormProjects/gf4yio/node_modules/@wdio/utils/build/test-framework/testFnWrapper.js:45:32)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1633028370337' status='broken' stop='1633028370354'>
+            <name>Linkage test, switch to Russian page</name>
+            <title>Linkage test, switch to Russian page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.61'/>
+            </parameters>
+            <steps>
+                <step start='1633028370341' status='broken' stop='1633028370354'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>By is not defined</message>
+                <stack-trace>ReferenceError: By is not defined
+                    at ActionPage.findCurrentUrl (/Users/denyskhomenko/WebstormProjects/gf4yio/test/pageobjects/actionPage.js:36:34)
+                    at Context.&lt;anonymous> (/Users/denyskhomenko/WebstormProjects/gf4yio/test/specs/german.js:81:44)
+                    at Context.executeAsync (/Users/denyskhomenko/WebstormProjects/gf4yio/node_modules/@wdio/utils/build/shim.js:323:27)
+                    at Context.testFrameworkFnWrapper (/Users/denyskhomenko/WebstormProjects/gf4yio/node_modules/@wdio/utils/build/test-framework/testFnWrapper.js:45:32)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1633028370355' status='failed' stop='1633028370369'>
+            <name>Switching to German language</name>
+            <title>Switching to German language</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.61'/>
+            </parameters>
+            <steps>
+                <step start='1633028370356' status='failed' stop='1633028370369'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>expectedUrlC is not defined</message>
+                <stack-trace>ReferenceError: expectedUrlC is not defined
+                    at Context.&lt;anonymous> (/Users/denyskhomenko/WebstormProjects/gf4yio/test/specs/german.js:86:65)
+                    at Context.executeAsync (/Users/denyskhomenko/WebstormProjects/gf4yio/node_modules/@wdio/utils/build/shim.js:323:27)
+                    at Context.testFrameworkFnWrapper (/Users/denyskhomenko/WebstormProjects/gf4yio/node_modules/@wdio/utils/build/test-framework/testFnWrapper.js:45:32)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1633028370369' status='broken' stop='1633028370406'>
+            <name>Title of the page says </name>
+            <title>Title of the page says </title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.61'/>
+            </parameters>
+            <steps>
+                <step start='1633028370370' status='broken' stop='1633028370405'>
+                    <name>GET /session/:sessionId/title</name>
+                    <title>GET /session/:sessionId/title</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1633028370384' status='broken' stop='1633028370405'>
+                            <name>GET /session/:sessionId/screenshot</name>
+                            <title>GET /session/:sessionId/screenshot</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>no such window: target window already closed
+                from unknown error: web view not found
+                  (Session info: chrome=94.0.4606.61)</message>
+                <stack-trace>0   chromedriver                        0x000000010441f5e9 chromedriver + 2749929
+                1   chromedriver                        0x0000000104ad65c3 chromedriver + 9790915
+                2   chromedriver                        0x00000001041aa828 chromedriver + 174120
+                3   chromedriver                        0x000000010418c2d4 chromedriver + 49876
+                4   chromedriver                        0x00000001041ffa1c chromedriver + 522780
+                5   chromedriver                        0x000000010420e2cf chromedriver + 582351
+                6   chromedriver                        0x00000001041fc933 chromedriver + 510259
+                7   chromedriver                        0x00000001041d2d6e chromedriver + 339310
+                8   chromedriver                        0x00000001041d4095 chromedriver + 344213
+                9   chromedriver                        0x00000001043e63bf chromedriver + 2515903
+                10  chromedriver                        0x00000001043f8f2f chromedriver + 2592559
+                11  chromedriver                        0x00000001043cabdf chromedriver + 2403295
+                12  chromedriver                        0x00000001043fa2da chromedriver + 2597594
+                13  chromedriver                        0x00000001043dbbcc chromedriver + 2472908
+                14  chromedriver                        0x0000000104413988 chromedriver + 2701704
+                15  chromedriver                        0x0000000104413b11 chromedriver + 2702097
+                16  chromedriver                        0x00000001044245e8 chromedriver + 2770408
+                17  libsystem_pthread.dylib             0x00007fff203898fc _pthread_start + 224
+                18  libsystem_pthread.dylib             0x00007fff20385443 thread_start + 15
+                </stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1633028370406' status='broken' stop='1633028370439'>
+            <name>Return to German page</name>
+            <title>Return to German page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.61'/>
+            </parameters>
+            <steps>
+                <step start='1633028370407' status='broken' stop='1633028370439'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>By is not defined</message>
+                <stack-trace>ReferenceError: By is not defined
+                    at ActionPage.findCurrentUrl (/Users/denyskhomenko/WebstormProjects/gf4yio/test/pageobjects/actionPage.js:36:34)
+                    at Context.&lt;anonymous> (/Users/denyskhomenko/WebstormProjects/gf4yio/test/specs/german.js:98:35)
+                    at Context.executeAsync (/Users/denyskhomenko/WebstormProjects/gf4yio/node_modules/@wdio/utils/build/shim.js:323:27)
+                    at Context.testFrameworkFnWrapper (/Users/denyskhomenko/WebstormProjects/gf4yio/node_modules/@wdio/utils/build/test-framework/testFnWrapper.js:45:32)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1633028370439' status='broken' stop='1633028370470'>
+            <name>Top 100 games displays more than 100 results</name>
+            <title>Top 100 games displays more than 100 results</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.61'/>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.61'/>
+            </parameters>
+            <steps>
+                <step start='1633028370443' status='broken' stop='1633028370462'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>By is not defined</message>
+                <stack-trace>ReferenceError: By is not defined
+                    at ActionPage.findByXpath (/Users/denyskhomenko/WebstormProjects/gf4yio/test/pageobjects/actionPage.js:20:34)
+                    at Context.&lt;anonymous> (/Users/denyskhomenko/WebstormProjects/gf4yio/test/specs/german.js:104:22)
+                    at Context.executeAsync (/Users/denyskhomenko/WebstormProjects/gf4yio/node_modules/@wdio/utils/build/shim.js:323:27)
+                    at Context.testFrameworkFnWrapper (/Users/denyskhomenko/WebstormProjects/gf4yio/node_modules/@wdio/utils/build/test-framework/testFnWrapper.js:45:32)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

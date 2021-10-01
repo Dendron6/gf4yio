@@ -1,0 +1,28 @@
+{
+  "name": "gf4yio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "german": "npx wdio --spec ./test/specs/german.js",
+    "english": "npx wdio --spec ./test/specs/english.js",
+    "russian": "npx wdio --spec ./test/specs/russian.js",
+    "ukrainian": "npx wdio --spec ./test/specs/ukrainian.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@wdio/cli": "^7.14.0",
+    "axios": "^0.22.0"
+  },
+  "devDependencies": {
+    "@wdio/allure-reporter": "^7.13.2",
+    "@wdio/local-runner": "^7.13.2",
+    "@wdio/mocha-framework": "^7.13.2",
+    "@wdio/spec-reporter": "^7.13.2",
+    "chromedriver": "^94.0.0",
+    "wdio-chromedriver-service": "^7.2.2"
+  }
+}

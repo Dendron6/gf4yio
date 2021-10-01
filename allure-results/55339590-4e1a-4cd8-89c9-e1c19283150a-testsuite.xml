@@ -1,0 +1,67 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1633069781969' stop='1633069787432'>
+    <name>German Game Flash For You Test Suite</name>
+    <title>German Game Flash For You Test Suite</title>
+    <test-cases>
+        <test-case start='1633069781969' status='broken' stop='1633069787431'>
+            <name>Linkage test, switch to Ukrainian page</name>
+            <title>Linkage test, switch to Ukrainian page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.61'/>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.61'/>
+            </parameters>
+            <steps>
+                <step start='1633069781970' status='passed' stop='1633069786583'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='263a06c7-b84c-4e14-96cd-973b97b15614-attachment.json' type='application/json' size='35'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1633069786588' status='broken' stop='1633069787431'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='2f0301c2-2f99-489d-8b8c-c68fdfec12af-attachment.json' type='application/json' size='76'/>
+                    </attachments>
+                    <steps>
+                        <step start='1633069786590' status='passed' stop='1633069786605'>
+                            <name>GET /session/:sessionId/screenshot</name>
+                            <title>GET /session/:sessionId/screenshot</title>
+                            <attachments>
+                                <attachment title='Response' source='ac7e577a-8e4a-4aa7-9ce9-f2843373c3be-attachment.json' type='application/json' size='83'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                        <step start='1633069786616' status='passed' stop='1633069787429'>
+                            <name>POST /session/:sessionId/element/2e6771eb-5721-4624-9cb6-c7927716fa2d/click</name>
+                            <title>POST /session/:sessionId/element/2e6771eb-5721-4624-9cb6-c7927716fa2d/click</title>
+                            <attachments>
+                                <attachment title='Screenshot' source='72796fce-65c1-41dd-86ca-25311205d401-attachment.png' type='image/png' size='1687963'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Cannot read property 'emit' of undefined</message>
+                <stack-trace>TypeError: Cannot read property 'emit' of undefined
+                    at protocolCommand (/Users/denyskhomenko/WebstormProjects/gf4yio/node_modules/webdriver/build/command.js:72:14)
+                    at wrapCommandFn (/Users/denyskhomenko/WebstormProjects/gf4yio/node_modules/@wdio/utils/build/shim.js:131:38)
+                    at /Users/denyskhomenko/WebstormProjects/gf4yio/node_modules/@wdio/utils/build/shim.js:270:24
+                    at Context.&lt;anonymous> (/Users/denyskhomenko/WebstormProjects/gf4yio/test/specs/german.js:32:22)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

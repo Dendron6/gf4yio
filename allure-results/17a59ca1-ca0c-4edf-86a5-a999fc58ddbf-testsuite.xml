@@ -1,0 +1,76 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1633070092209' stop='1633070097745'>
+    <name>German Game Flash For You Test Suite</name>
+    <title>German Game Flash For You Test Suite</title>
+    <test-cases>
+        <test-case start='1633070092209' status='broken' stop='1633070097744'>
+            <name>Linkage test, switch to Ukrainian page</name>
+            <title>Linkage test, switch to Ukrainian page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.61'/>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.61'/>
+            </parameters>
+            <steps>
+                <step start='1633070092211' status='passed' stop='1633070096940'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='d3ec482b-af83-4a49-924c-9ab602123de9-attachment.json' type='application/json' size='35'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1633070096944' status='broken' stop='1633070097744'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='f381dc51-d43c-48b5-9047-a2b8d0e60bf9-attachment.json' type='application/json' size='76'/>
+                    </attachments>
+                    <steps>
+                        <step start='1633070096945' status='passed' stop='1633070097743'>
+                            <name>GET /session/:sessionId/url</name>
+                            <title>GET /session/:sessionId/url</title>
+                            <attachments>
+                                <attachment title='Screenshot' source='6a712660-bdf6-4453-91c8-e5e683cac760-attachment.png' type='image/png' size='1690255'/>
+                            </attachments>
+                            <steps>
+                                <step start='1633070096947' status='passed' stop='1633070096967'>
+                                    <name>GET /session/:sessionId/screenshot</name>
+                                    <title>GET /session/:sessionId/screenshot</title>
+                                    <attachments>
+                                        <attachment title='Response' source='3e2054ac-977e-4b4f-b7cb-767dfb313947-attachment.json' type='application/json' size='83'/>
+                                    </attachments>
+                                    <steps/>
+                                </step>
+                                <step start='1633070096978' status='passed' stop='1633070096986'>
+                                    <name>POST /session/:sessionId/element/e221a546-7120-4751-bde9-9dab739e459e/click</name>
+                                    <title>POST /session/:sessionId/element/e221a546-7120-4751-bde9-9dab739e459e/click</title>
+                                    <attachments>
+                                        <attachment title='Response' source='7929f55b-7108-42ce-a96b-2bd9a94b9484-attachment.json' type='application/json' size='22'/>
+                                    </attachments>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>xpath.click is not a function</message>
+                <stack-trace>TypeError: xpath.click is not a function
+                    at ActionPage.findCurrentUrl (/Users/denyskhomenko/WebstormProjects/gf4yio/test/pageobjects/actionPage.js:51:17)
+                    at Context.&lt;anonymous> (/Users/denyskhomenko/WebstormProjects/gf4yio/test/specs/german.js:31:44)
+                    at Context.executeAsync (/Users/denyskhomenko/WebstormProjects/gf4yio/node_modules/@wdio/utils/build/shim.js:323:27)
+                    at Context.testFrameworkFnWrapper (/Users/denyskhomenko/WebstormProjects/gf4yio/node_modules/@wdio/utils/build/test-framework/testFnWrapper.js:45:32)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
