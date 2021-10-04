@@ -1,5 +1,6 @@
 const Page = require("../pageobjects/page.js")
 const axios = require("axios");
+//you can run test using npm run german/russian/ukrainian/english
 
 
 class ActionPage extends Page {
@@ -27,9 +28,20 @@ class ActionPage extends Page {
     get flag3() {
         return $(this.flag33)
     }
+    get otherBtn() {
+        return $(this.otherButton)
+    }
+    get topBtn() {
+        return $(this.top100)
+    }
+    //this will create list of all the games in the class 'in'
+    get listGames(){
+        return $$('.in')
+    }
 
-    async findByXpath(xpath) {
-        await driver.findElement(By.xpath(xpath)).click()
+    async clickTop100() {
+        await this.otherBtn.click()
+        await this.topBtn.click()
     }
 
     async timer(url) {
